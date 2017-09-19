@@ -10,14 +10,6 @@
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json", {
-            onProgress: UnityProgress
-        });
-    </script>
 </head>
 
 <body>
@@ -51,6 +43,15 @@
                     <div class="title">Roll a ball test</div>
                 </div>
             </div>
+            
+            <p>
+                The additionnal stuff I made additionnally to the original tutorial:
+                <ul>
+                    <li>Make the yellow pickups have a random position and angle on the board.</li>
+                    <li>Pickups amount on the board are a simple configuration option in a game object.</li>
+                    <li>The "Win" message is dependent of this static configuration option so the necessary amount of pickups to collect can be changed at one single place.</li>
+                </ul>
+            </p>
 
         </div>
     </div>
@@ -68,6 +69,13 @@
     <script src="../../js/materialize.min.js"></script>
     <script src="../../js/init.js"></script>
 
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json", {
+            onProgress: UnityProgress
+        });
+    </script>
 </body>
 
 </html>
