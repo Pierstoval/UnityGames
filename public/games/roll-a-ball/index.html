@@ -10,6 +10,7 @@
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="TemplateData/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
@@ -35,24 +36,28 @@
         <div class="section">
             <h1 class="header center orange-text">Roll-a-ball</h1>
 
-            <div class="webgl-content center" style="width: 960px;margin: 0 auto;">
-                <div id="gameContainer" style="width: 960px; height: 600px; margin: 0 auto;"></div>
-                <div class="footer">
-                    <div class="webgl-logo"></div>
-                    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-                    <div class="title">Roll a ball test</div>
+            <div id="game">
+                <div class="webgl-content center">
+                    <div id="gameContainer"></div>
+                    <div class="footer">
+                        <div class="webgl-logo"></div>
+                        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                        <div class="title">Roll a ball</div>
+                    </div>
                 </div>
             </div>
-            
+
             <p>
-                The additionnal stuff I made additionnally to the original tutorial:
-                <ul>
+                Stuff I made additionnally to the original tutorial:
+                <ul class="circle-list">
                     <li>Make the yellow pickups have a random position and angle on the board.</li>
                     <li>Pickups amount on the board are a simple configuration option in a game object.</li>
                     <li>The "Win" message is dependent of this static configuration option so the necessary amount of pickups to collect can be changed at one single place.</li>
+                    <li>Added a "Restart" button</li>
                 </ul>
             </p>
 
+            <div style="clear: both;"></div>
         </div>
     </div>
 
@@ -72,9 +77,7 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json", {
-            onProgress: UnityProgress
-        });
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json", {onProgress: UnityProgress});
     </script>
 </body>
 

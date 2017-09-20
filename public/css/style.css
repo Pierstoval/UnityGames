@@ -12,3 +12,23 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+#gameContainer {
+    width: 960px;
+    height: 600px;
+}
+#game {
+    width: 960px;
+    height: 600px;
+    margin: 0 auto 45px auto;
+    position: relative;
+}
+ul.circle-list,
+ul.circle-list > li,
+li.circle-list {
+    list-style: circle outside;
+}
+
+ul.circle-list > li,
+li.circle-list {
+    margin-left: 20px;
+}
