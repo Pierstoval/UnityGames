@@ -10,7 +10,7 @@
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="TemplateData/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="simple-background/TemplateData/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
@@ -34,20 +34,18 @@
 
     <div class="container">
         <div class="section">
-            <h1 class="header center orange-text">Roll-a-ball</h1>
+            <h1 class="header center orange-text">Orbitale Echo</h1>
+            <h2 class="header center orange-text">A simple background</h2>
 
             <div id="game">
                 <div id="gameContainer"></div>
             </div>
 
             <div>
-                <p>Stuff I made additionnally to the original tutorial:</p>
-                <ul class="circle-list">
-                    <li>Make the yellow pickups have a random position and angle on the board.</li>
-                    <li>Pickups amount on the board are a simple configuration option in a game object.</li>
-                    <li>The "Win" message is dependent of this static configuration option so the necessary amount of pickups to collect can be changed at one single place.</li>
-                    <li>Added a "Restart" button</li>
-                </ul>
+                <p>Took me more than an hour to make sure that the background could keep in place.</p>
+                <p>The main problem was that I didn't understand the difference between a "canvas" object and a simple
+                GameObject.</p>
+                <p>And the difference is still not very clear to me in fact...</p>
             </div>
 
             <div style="clear: both;"></div>
@@ -67,10 +65,10 @@
     <script src="../../js/materialize.min.js"></script>
     <script src="../../js/init.js"></script>
 
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
+    <script src="simple-background/TemplateData/UnityProgress.js"></script>
+    <script src="simple-background/Build/UnityLoader.js"></script>
     <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json", {onProgress: UnityProgress});
+        var gameInstance = UnityLoader.instantiate("gameContainer", "simple-background/Build/menu.json", {onProgress: UnityProgress});
     </script>
 </body>
 
