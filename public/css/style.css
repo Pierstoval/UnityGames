@@ -32,3 +32,23 @@ ul.circle-list > li,
 li.circle-list {
     margin-left: 20px;
 }
+.breadcrumbs {
+    padding-left: 10px;
+}
+body nav.nav-small {
+    padding: 5px 0;
+}
+
+@media only screen and (min-width: 601px) {
+    body nav.nav-small,
+    body nav.nav-small .nav-wrapper i,
+    body nav.nav-small .breadcrumb,
+    body nav.nav-small .breadcrumb:before,
+    body nav.nav-small a.button-collapse,
+    body nav.nav-small a.button-collapse i
+    {
+        font-size: 16px;
+        height: auto;
+        line-height: inherit;
+    }
+}

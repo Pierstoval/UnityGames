@@ -26,26 +26,30 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-    <div class="section no-pad-bot" id="index-banner">
-        <div class="container">
-        </div>
-    </div>
-
 
     <div class="container">
+        <nav class="nav-small light-blue lighten-2">
+            <div class="breadcrumbs nav-wrapper">
+                <div class="col s12">
+                    <a href="../../index.html" class="breadcrumb">Home</a>
+                    <a href="./" class="breadcrumb">Orbitale Echo</a>
+                    <span class="breadcrumb">A simple background</span>
+                </div>
+            </div>
+        </nav>
         <div class="section">
             <h1 class="header center orange-text">Orbitale Echo</h1>
             <h2 class="header center orange-text">A simple background</h2>
 
-            <div id="game">
-                <div id="gameContainer"></div>
-            </div>
-
             <div>
                 <p>Took me more than an hour to make sure that the background could keep in place.</p>
                 <p>The main problem was that I didn't understand the difference between a "canvas" object and a simple
-                GameObject.</p>
+                    GameObject.</p>
                 <p>And the difference is still not very clear to me in fact...</p>
+            </div>
+
+            <div id="game">
+                <div id="gameContainer"></div>
             </div>
 
             <div style="clear: both;"></div>
@@ -68,7 +72,7 @@
     <script src="1-simple-background/TemplateData/UnityProgress.js"></script>
     <script src="1-simple-background/Build/UnityLoader.js"></script>
     <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "simple-background/Build/menu.json", {onProgress: UnityProgress});
+        var gameInstance = UnityLoader.instantiate("gameContainer", "1-simple-background/Build/menu.json", {onProgress: UnityProgress});
     </script>
 </body>
 

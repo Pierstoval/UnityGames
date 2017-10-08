@@ -26,21 +26,25 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-    <div class="section no-pad-bot" id="index-banner">
-        <div class="container">
-        </div>
-    </div>
-
 
     <div class="container">
+        <nav class="nav-small light-blue lighten-2">
+            <div class="breadcrumbs nav-wrapper">
+                <div class="col s12">
+                    <a href="../../index.html" class="breadcrumb">Home</a>
+                    <span class="breadcrumb">Roll-a-ball</span>
+                </div>
+            </div>
+        </nav>
         <div class="section">
             <h1 class="header center orange-text">Roll-a-ball</h1>
 
-            <div id="game">
-                <div id="gameContainer"></div>
-            </div>
-
             <div>
+                <p>
+                    I made this by following
+                    <a href="https://unity3d.com/fr/learn/tutorials/projects/roll-ball-tutorial">the official tutorial</a>
+                    and it works!
+                </p>
                 <p>Stuff I made additionnally to the original tutorial:</p>
                 <ul class="circle-list">
                     <li>Make the yellow pickups have a random position and angle on the board.</li>
@@ -48,6 +52,10 @@
                     <li>The "Win" message is dependent of this static configuration option so the necessary amount of pickups to collect can be changed at one single place.</li>
                     <li>Added a "Restart" button</li>
                 </ul>
+            </div>
+
+            <div id="game">
+                <div id="gameContainer"></div>
             </div>
 
             <div style="clear: both;"></div>

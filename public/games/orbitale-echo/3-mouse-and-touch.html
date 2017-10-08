@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Pierstoval - My unity games</title>
+
+    <!-- CSS  -->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="../../index.html" class="brand-logo">Pierstoval</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://github.com/Pierstoval">Github</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="https://github.com/Pierstoval">Github</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <nav class="nav-small light-blue lighten-2">
+            <div class="breadcrumbs nav-wrapper">
+                <div class="col s12">
+                    <a href="../../index.html" class="breadcrumb">Home</a>
+                    <a href="./" class="breadcrumb">Orbitale Echo</a>
+                    <span class="breadcrumb">Mouse and touch</span>
+                </div>
+            </div>
+        </nav>
+        <div class="section">
+            <h1 class="header center orange-text">Orbitale Echo</h1>
+            <h2 class="header center orange-text">Mouse and touch</h2>
+
+            <div>
+                <p>
+                    Thanks to Unity, having multiple ways of moving a player becomes easy. It took me less than 2 hours
+                    to understand the very basic rules behind the mouse and mobile screen touch.
+                </p>
+                <p>
+                    I have not tested touch feature, because I'm lazy, but I'm gonna do it one day. And because it's
+                    built with WebGL, it might not work the same way.
+                </p>
+                <p>
+                    There are a LOT of things that I still do not understand, for example the notion of ray & plane
+                    cast used to make the mouse click working, but I'm sure I'll see later.
+                </p>
+            </div>
+
+            <div id="game">
+                <div id="gameContainer" style="width: 960px; height: 540px;"></div>
+            </div>
+
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <footer class="page-footer blue darken-4">
+        <div class="footer-copyright">
+            <div class="container">
+                Pierstoval &copy; 2017
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/materialize.min.js"></script>
+    <script src="../../js/init.js"></script>
+
+    <script src="common/01c0aa35cfe523acc0a82d9b25ed635d.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "3-mouse-and-touch/08f01a63fa6c5bfdc704669d8afc4d96.json");
+    </script>
+</body>
+
+</html>
