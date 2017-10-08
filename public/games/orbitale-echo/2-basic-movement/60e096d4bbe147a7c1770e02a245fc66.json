@@ -4,7 +4,7 @@
 "asmCodeUrl": "1af37ca02ef52145ca5fcaa804c1114e.unityweb",
 "asmMemoryUrl": "a5d7680c66bd0f3767019f18931258fa.unityweb",
 "asmFrameworkUrl": "349b591b45626b83d40fe280340301c0.unityweb",
-"backgroundUrl": "cb38c1c0fd7eb3ddb33b278e05b505c8.jpg",
+"backgroundUrl": "../common/cb38c1c0fd7eb3ddb33b278e05b505c8.jpg",
 "splashScreenStyle": "Dark",
 "backgroundColor": "#FFFFFF"
 }
