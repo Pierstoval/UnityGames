@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Pierstoval - My unity games</title>
+
+    <!-- CSS  -->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="../../index.html" class="brand-logo">Pierstoval</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://github.com/Pierstoval">Github</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="https://github.com/Pierstoval">Github</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <nav class="nav-small light-blue lighten-2">
+            <div class="breadcrumbs nav-wrapper">
+                <div class="col s12">
+                    <a href="../../index.html" class="breadcrumb">Home</a>
+                    <a href="./" class="breadcrumb">Orbitale Echo</a>
+                    <span class="breadcrumb">Note automatic creation</span>
+                </div>
+            </div>
+        </nav>
+        <div class="section">
+            <h1 class="header center orange-text">Orbitale Echo</h1>
+            <h2 class="header center orange-text">Note automatic creation</h2>
+
+            <div>
+                <p>
+                    Took many days to reach this level!
+                </p>
+                <p>
+                    Comparing to the previous update, it seems like I just added a note to the scene, but it is actually
+                    much more advanced.
+                </p>
+                <p>
+                    I managed to make sure every level can be instantiated based on a JSON file, and when the level is
+                    initialized, each note is created based on this JSON config, game objects are created with the
+                    correct scripts configuration and sprites on activation, active duration, etc.
+                </p>
+                <p>
+                    This is such advanced work for me, I'm really proud of it!
+                </p>
+            </div>
+
+            <div id="game">
+                <div id="gameContainer" style="width: 960px; height: 540px;"></div>
+            </div>
+
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <footer class="page-footer blue darken-4">
+        <div class="footer-copyright">
+            <div class="container">
+                Pierstoval &copy; 2017
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/materialize.min.js"></script>
+    <script src="../../js/init.js"></script>
+
+    <script src="common/4f4a801b6b63c0b659f1f3ab02f9dce0.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "5-note-automatic-creation/c378338e979a598cc46da67334eb4bf6.json");
+    </script>
+</body>
+
+</html>
