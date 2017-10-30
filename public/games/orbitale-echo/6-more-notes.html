@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Pierstoval - My unity games</title>
+
+    <!-- CSS  -->
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="../../index.html" class="brand-logo">Pierstoval</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://github.com/Pierstoval">Github</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="https://github.com/Pierstoval">Github</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <nav class="nav-small light-blue lighten-2">
+            <div class="breadcrumbs nav-wrapper">
+                <div class="col s12">
+                    <a href="../../index.html" class="breadcrumb">Home</a>
+                    <a href="./" class="breadcrumb">Orbitale Echo</a>
+                    <span class="breadcrumb">More notes!</span>
+                </div>
+            </div>
+        </nav>
+        <div class="section">
+            <h1 class="header center orange-text">Orbitale Echo</h1>
+            <h2 class="header center orange-text">More notes!</h2>
+
+            <div>
+                <p>
+                    Hard times again.
+                </p>
+                <p>
+                    It seems like I just added notes, but in fact I consolidated the JSON file that is used to generate
+                    a level.
+                </p>
+                <p>
+                    I also made everything possible for me to be sure objects can interact with each other and can be
+                    aware of what's going on in the game.<br>
+                    For example, I made the little lights aware of the whole lights sequence so in the future I can
+                    be sure that, when player & light collide, they should not activate if it's not the right time for
+                    it.
+                </p>
+                <p>
+                    Big work and more coming!
+                </p>
+            </div>
+
+            <div id="game">
+                <div id="gameContainer" style="width: 960px; height: 540px;"></div>
+            </div>
+
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <footer class="page-footer blue darken-4">
+        <div class="footer-copyright">
+            <div class="container">
+                Pierstoval &copy; 2017
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/materialize.min.js"></script>
+    <script src="../../js/init.js"></script>
+
+    <script src="common/4f4a801b6b63c0b659f1f3ab02f9dce0.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "6-more-notes/c7ba3bf71f1c90ad74a6b7edfa47b902.json");
+    </script>
+</body>
+
+</html>
