@@ -32,21 +32,36 @@
                 <div class="col s12">
                     <a href="../../index.html" class="breadcrumb">Home</a>
                     <a href="./" class="breadcrumb">Orbitale Echo</a>
-                    <span class="breadcrumb">Basic movement</span>
+                    <span class="breadcrumb">Spacebar to trigger notes</span>
                 </div>
             </div>
         </nav>
         <div class="section">
             <h1 class="header center orange-text">Orbitale Echo</h1>
-            <h2 class="header center orange-text">Basic movement</h2>
+            <h2 class="header center orange-text">Spacebar to trigger notes</h2>
 
             <div>
-                <p>Such hard work! First attempt of making such simple behavior we find in every 2D platform game.</p>
-                <p>Took me a total of like 4 or 5 hours to make this work.</p>
-                <p>Not proud of the time, but for a first start, I find it quite nice.</p>
-                <p>I also discovered how to customize the build and make it lighter.</p>
-                <p>The main challenge here was to make sure that the movement could stop at one moment.</p>
-                <p>Just to make sure it's clear: <strong>for now, only the arrow keys (and WASD on a qwerty keyboard)</strong> work.</p>
+                <p>
+                    Cool times!
+                </p>
+                <p>
+                    I refactored the notes activation system in order to trigger them when the player presses the
+                    spacebar and is near a note. Lots of work because I had to refactor the scripts.
+                </p>
+                <p>
+                    A big search &amp; learn was that green light blink when we press the spacebar.<br>
+                    I first wanted to "draw" a simple circle and make it grow around the note, but I struggled very much
+                    and found that only tons of sprites would make the job, so I gave up.
+                </p>
+                <p>
+                    I found a pretty neat solution: <strong>particles</strong>!<br>
+                    I created a simple particle system that simply emits one static light that grows fast and disappear,
+                    and I found a way to trigger it manually via scripting when the player presses the spacebar.
+                </p>
+                <p>
+                    And as a small cliffhangler for next step: I modified a bit the JSON for the tutorial scene, and it
+                    doesn't work very well, so I might have to look for this...
+                </p>
             </div>
 
             <div id="game">
@@ -70,9 +85,9 @@
     <script src="../../js/materialize.min.js"></script>
     <script src="../../js/init.js"></script>
 
-    <script src="common/01c0aa35cfe523acc0a82d9b25ed635d.js"></script>
+    <script src="common/4f4a801b6b63c0b659f1f3ab02f9dce0.js"></script>
     <script>
-        UnityLoader.instantiate("gameContainer", "2-basic-movement/60e096d4bbe147a7c1770e02a245fc66.json");
+        UnityLoader.instantiate("gameContainer", "7-space-trigger-notes/004eddc6808e1bfcbd6065780c107c89.json");
     </script>
 </body>
 
